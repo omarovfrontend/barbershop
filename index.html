@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- мета тег - чтоб сайт смотрелся на моб. устройствах -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <title>Barbershop - BORODINSKI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="center-block-main">
+            <div class="header clearfix">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">ИНФОРМАЦИЯ</a></li>
+                        <li><a href="#">НОВОСТИ</a></li>
+                        <li><a href="#">ПРАЙС-ЛИСТ</a></li>
+                        <li><a href="#">МАГАЗИН</a></li>
+                        <li><a href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                    <div class="input">
+                        <a href="#"><img src="images/input.png" alt=""><span>ВХОД</span></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+            <!-- ЛОГО + 3 блока -->
+    <div class="main-content center-block-main">
+        <div>
+            <img class="logo" src="images/logo.png" alt="">
+        </div>
+        <div class="block3-main clearfix">
+            <article>
+                <h2>БЫСТРО</h2>
+                <img src="images/rect.png" alt="">
+                <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+            </article>
+                    <!-- 2 -->
+            <article>
+                <h2>КРУТО</h2>
+                <img src="images/rect.png" alt="">
+                <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.</p>
+                <p>МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!</p>
+                <p>ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+            </article>
+                    <!-- 3 -->
+            <article>
+                <h2>ДОРОГО</h2>
+                <img src="images/rect.png" alt="">
+                <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И</p>
+                <p>НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА</p>
+                <p>НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+            </article>
+        </div>
+    </div>
+            <!-- ОСНОВНОЕ СОДЕРЖИМОЕ -->
+    <div class="center-block-main content-bcgrd clearfix">
+       <article class="block2-main-left">
+            <h2 class="content-title">НОВОСТИ</h2>
+            <ul class="content-news">
+                <li>
+                    <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ</p>
+                    <p>ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p> 
+                    <time datetime="2019-07-06">11 января</time>
+                </li>
+                <li>
+                    <p>В НАШЕЙ КОМАНДЕ ПОПОЛНЕНИЕ, БОРИС «БРИТВА» СТРИГУНЕЦ,</p>
+                    <p>ОБЛАДAТЕЛЬ МНОЖЕСТВА ТИТУЛОВ И НАГРАД ПОПОЛНИЛ НАШИ</p>
+                    <p>СТРОЙНЫЕ РЯДЫ</p>
+                    <time datetime="2019-07-06">18 января</time>
+                </li>
+            </ul>
+            <a href="#" class="btn">ВСЕ НОВОСТИ</a>
+        </article>
+
+        <div class="block2-main-right">
+            <h2 class="content-title">ФОТОГАЛЕРЕЯ</h2>
+            <div class="content-image-block">
+                <img src="images/img.jpg" alt="">
+                <button type="submit" class="btn content-prev">НАЗАД</button>
+                <button type="submit" class="btn content-next">ВПЕРЕД</button>
+            </div>
+        </div>
+    </div>
+            <!-- Контактная инф-я -->
+    <div class="center-block-main content-bcgrd clearfix">
+        <article class="block2-main-left content-contact">
+            <h2 class="content-title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+            <div class="content-contact-block">
+                <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
+                <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8</p>
+                <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+            </div>
+            <div class="content-contact-block">
+                <p>ВРЕМЯ РАБОТЫ:</p>
+                <p>ПН—ПТ: С 10:00 ДО 22:00</p>
+                <p>СБ—ВС: С 10:00 ДО 19:00</p>
+            </div>
+            <a class="btn" href="#">КАК ПРОЕХАТЬ</a>
+            <a class="btn" href="#">ОБРАТНАЯ СВЯЗЬ</a>
+        </article>
+
+        <article class="block2-main-right content-form">
+                <h2 class="content-title">ЗАПИСАТЬСЯ</h2>
+                <p class="input-bottom">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+                <form action="" method="post">
+                    <div class="content-form">
+                        <p>
+                            <label for="date">ДАТА</label>
+                        </p>
+                        <input id="date" type="date" name="date" value="" required="required">
+                    </div>
+                    <div class="content-form-right">
+                        <p>
+                            <label for="time">ВРЕМЯ</label>
+                        </p>
+                        <input id="time" type="time" name="time" value="" required="required">
+                    </div>
+                    <div class="content-form">
+                        <p>
+                            <label for="text">ВАШЕ ИМЯ</label>
+                        </p>
+                        <input id="text" type="text" name="name" value="" placeholder="Шамиль">
+                    </div>
+                    <div class="content-form-right">
+                        <p>
+                            <label for="tel">ТЕЛЕФОН</label>
+                        </p>
+                        <input id="tel" type="tel" name="tel" value="" placeholder="+7 999 999 05 05" required="required">
+                    </div>
+                    <button type="submit" class="btn btn-submit">ОТПРАВИТЬ</button>
+                </form>
+        </article>
+    </div>
+
+            <!-- footer -->
+    <footer class="ftr">
+        <div class="center-block-main clearfix">
+            <div class="content-contact-block ftr-block-left">
+                <p>БАРБЕРШОП «БОРОДИНСКИЙ»</p>
+                <p>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8</p>
+                <a href="#">КАК НАС НАЙТИ?</a>
+                <p>ТЕЛЕФОН: +7 (495) 666-02-66</p>
+            </div>
+            <div class="ftr-social-block">
+                <p>ДАВАЙТЕ ДРУЖИТЬ!</p>
+                <a href="#" class="btn ftr-vk-social"></a>
+                <a href="#" class="btn ftr-fcbk-social"></a>
+                <a href="#" class="btn ftr-inst-social"></a>
+            </div>
+            <div class="ftr-block-right">
+                <p>РАЗРАБОТАНО:</p>
+                <a href="#" class="btn">html academy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
