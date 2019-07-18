@@ -374,3 +374,147 @@
                 margin-bottom: 20px;
                 text-align: center;
             }
+
+            
+            /* Item.html */
+            .item_logo {
+                padding: 18px 10px 0 0;
+                cursor: default;
+            }
+            
+            .item_bcg {
+                background: url(images/item_bcg.jpg) repeat;
+                margin-top: -50px;
+            }
+            
+            .item_block_main {
+                padding: 50px 0;
+            }
+            
+            .content-title {
+                margin-bottom: 15px;
+            }
+            
+            .item_content-news {
+                font-size: 0.875em;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.8;
+                margin-bottom: 50px;
+            }
+            
+            .item_content-news li {
+                float: left;
+            }
+            
+            .item_content-news li a {
+                text-decoration: none;
+                color: #000;
+            }
+            
+            .item_content-news li a:hover {
+                text-decoration: underline;
+                color: #242424;
+            }
+            
+            .item_content-news img {
+                margin: 0 15px;
+            }
+            
+            .item_content-news span {
+                color: #aba9a7;
+            }
+            
+            .item_block_img {
+                float: left;
+                width: 49%;
+            }
+            
+            .item_block_img img {
+                box-shadow: 0 0 20px 0px #e0ddda;
+            }
+            
+            .item_big_img img {
+                margin-bottom: 16px;
+            }
+            
+            .item_img img {
+                margin-left: 16px;
+            }
+            
+            .item_img img:first-child {
+                margin-left: 0;
+            }
+            
+            .item_block_news {
+                float: right;
+                width: 41%;
+            }
+            
+            .item_description p {
+                font-size: 0.875em;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.8;
+                padding: 15px 0;
+            }
+            
+            .item_description span {
+                margin-left: 175px;
+                color: #aba9a7;
+            }
+            
+            .item_btn {
+                margin: 10px 0 45px 0;
+            }
+            
+            .item_btn1 {
+                padding: 12px 38px;
+                background-color: #e5e5e5;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 0.875em;
+                color: #000;
+                text-transform: uppercase;
+                margin-right: -3px;
+                border: none;
+                outline: none;
+                cursor: default;
+            }
+            
+            .item_btn2 {
+                padding: 12px 20px;
+                background-color: #000;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 0.875em;
+                color: #fff;
+                text-transform: uppercase;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+            
+            .item_btn2:hover {
+                background-color: #663d15;
+            }
+            
+            .item-title {
+                font-size: 1.5em;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 23px;
+            }
+            
+            .item_description li {
+                list-style: none;
+                font-size: 0.875em;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 2;
+                color: #000;
+            }
+            
+            .item_description img {
+                margin-right: 10px;
+            }
