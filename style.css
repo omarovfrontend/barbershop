@@ -376,7 +376,7 @@
             }
 
             
-            /* Item.html */
+                            /* Item.html */
             .item_logo {
                 padding: 18px 10px 0 0;
                 cursor: default;
@@ -518,3 +518,5 @@
             .item_description img {
                 margin-right: 10px;
             }
+
+                        /* shop.html */
