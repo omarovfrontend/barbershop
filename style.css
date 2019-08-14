@@ -520,3 +520,28 @@
             }
 
                         /* shop.html */
+.shop-title {
+    font-size: 1.5em;
+}
+
+.item_block_main form {
+    float: left;
+    margin: 0 50px 50px 0;
+}
+
+.shop-container {
+    display: block;
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.8;
+    padding-bottom: 10px;
+}
+
+.shop-container input {
+    margin-right: 30px;
+    vertical-align: baseline;
+    transform: scale(1.6);      /* увеличили чекбокс через трансформ */
+    opacity: 0.9;
+    cursor: pointer;
+}
