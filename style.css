@@ -700,3 +700,94 @@
     background-color: #fff;
     color: #000;
 }
+
+                /* price.html */
+.price-big-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+    background-image: url(images/price-line.png), url(images/price-line2.png);
+    background-repeat: no-repeat;
+    background-position: left, right;
+}
+
+.price-center-content-blog {
+    margin: 50px 0;
+}
+
+.blog-left {
+    float: left;
+    width: 240px;
+}
+
+.blog-left li {
+    list-style: none;
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 18px;
+}
+
+.blog-left li:last-child {
+    margin-bottom: 0;
+}
+
+.blog-left img {
+    margin-right: 10px;
+}
+
+.blog-right {
+    float: right;
+}
+
+                    /* таблица */
+table {
+    width: 460px;
+    border: 2px solid #000;
+    color: #000;
+    border-collapse: collapse;
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr {
+    text-align: center;
+}
+
+.left-column {
+    text-align: left;
+    padding-left: 15px;
+    vertical-align: middle;
+    width: 50%;
+}
+
+td, tr {
+    border: 2px solid #000;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.price-blog-articles {
+    margin: 0;
+}
+
+.price-blog-articles p {
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.price-text1 {
+    float: left;
+    width: 42%;
+}
+
+.price-text2 {
+    float: right;
+    width: 49%;
+    margin-top: 55px;
+}
