@@ -1,563 +1,567 @@
-            /* --------------- reset.css - сбрасываем настройки по умолчанию --------------- */
-            html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
-                margin: 0;
-                padding: 0;
-                border: 0;
-                outline: 0;                               /* обнуляем отступы и убираем бордюры */
-                vertical-align: baseline;          /* приводим все к одной базовой линии */
-                background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
-                font-size: 100%;                     /* размер шрифта всем одинаковый */
-            }
-            
-            html {
-                min-height:100%;            /* всегда показываем вертикальную полосу прокрутки  */
-            }
-            
-            a {                             /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
-                margin: 0;
-                padding: 0;
-                font-size: 100%;
-                vertical-align: baseline;
-                background: transparent;
-                outline: none;
-            }
-            
-            table {						    /* устраняем отступы между ячейками таблицы */
-                border-collapse: collapse; 
-                border-spacing: 0;
-            }
-            
-            td, td img {
-                vertical-align: top;		/* возвращаем привычное вертикальное выравнивание */
-            } 
-            
-            input, select, button, textarea {
-                margin: 0; 				    /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
-                font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
-                outline: none;
-            }
-            
-            input[type="text"], input[type="password"], textarea {
-                padding: 0; 				/* убираем внутренние отступы для текстовых полей */
-            }
-            
-            input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
-                vertical-align: bottom;
-            }
-            
-            input[type="radio"] {
-                vertical-align: text-bottom;
-            }
-            
-            sub {
-                vertical-align: sub;
-                font-size: smaller;
-            }
-            
-            sup {
-                vertical-align: super;
-                font-size: smaller;
-            }
-            
-            article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-                display: block;
-            }
-            
-            nav ul {
-                 list-style: none;
-            }
-            
-            h1, h2, h3, h4, h5, h6{
-                font-weight:normal;
-            }
-            
-            img {
-                max-width:100%;
-            }
-            
-            .clr {                              /* для этого класса убираем обтекание */
-                clear:both;
-            }
-            
-            .clearfix:after {
-                clear: both;
-                content: "";
-                display: table;
-            }
-            
-                            /* ДАЛЕЕ - стилизация макета  */
-            
-            body {
-                background: url(images/cover.jpg);
-                background-repeat: no-repeat;
-                background-position: center top;
-                font-family: 'PT Sans Narrow', sans-serif;
-            }
-                                /* ШАПКА */
-            header {
-                background-color: #000;
-                margin-bottom: 50px;
-            }
-            
-            .center-block-main {
-                max-width: 940px;
-                margin: 0 auto;
-            }
-            
-            .header {
-                font-weight: bold;
-            }
-            
-            .menu {
-                float: left;
-            }
-            
-            .menu li {
-                float: left;
-                margin-right: 0;
-                text-transform: uppercase;
-                font-size: 1em;
-            }
-            
-            .menu li a {
-                text-decoration: none;
-                color: #fff;
-                display: block;
-                padding: 20px 15px;
-            }
-            
-            .menu li a:hover {
-                background-color: #242424;
-            }
-            
-            .input {
-                float: right;
-                padding: 20px 15px;
-            }
-            
-            .input img {
-                margin-right: 7px;
-                vertical-align: middle;
-                opacity: 0.3;
-            }
-            
-            .input span {
-                text-decoration: none;
-                text-transform: uppercase;
-                color: #fff;
-                vertical-align: middle;
-            }
-            
-            .input:hover, .input img:hover {
-                background-color: #242424;
-                cursor: pointer;
-                opacity: 1;
-            }
-                            /* лого + МЕНЮ */
-            .main-content {
-                margin-bottom: 60px;
-            }
-            
-            .logo {
-                margin: 0 auto 70px auto;
-                display: block;
-            }
-            
-            .block3-main {
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .block3-main article {
-                width: 31%;
-                float: left;
-                margin-left: 2.6%;
-            }
-            
-            .block3-main article:first-child {
-                margin-left: 0;
-            }
-            
-            .block3-main article h2 {
-                font-size: 1.875em;
-                font-weight: bold;
-                color: #fff;
-                text-align: center;
-            }
-            
-            .block3-main article img {
-                display: table;
-                margin: 10px auto 30px auto;
-            
-            }
-            
-            .block3-main article p {
-                font-size: 0.875em;
-                color: #fff;
-                text-align: center;
-                font-weight: bold;
-            }
-                            /* ОСНОВНОЕ СОДЕРЖИМОЕ */
-            .content-bcgrd {
-                background: url(images/brd.png) no-repeat center, white url(images/content-bcgrd.jpg);
-                margin-bottom: 35px;
-                padding: 50px 80px;
-                box-sizing: border-box;
-            }
-            
-            .block2-main-left {
-                float: left;
-                width: 350px;
-            }
-            
-            .content-title {
-                font-size: 1.875em;
-                font-weight: bold;
-                margin-bottom: 30px;
-                text-transform: uppercase;
-            }
-            
-            .content-news li {
-                font-size: 0.875em;
-                font-weight: bold;
-                line-height: 1.8;
-                margin-bottom: 30px;
-                list-style: none;
-            }
-            
-            .btn {
-                padding: 11px 33px;
-                background-color: #000;
-                font-weight: bold;
-                text-decoration: none;
-                font-size: 0.875em;
-                color: #fff;
-                text-transform: uppercase;
-                margin-right: 20px;
-                border: none;
-                outline: none;
-                cursor: pointer;
-            }
-            
-            .btn:hover {
-                background-color: #663d15;
-            }
-            
-            .block2-main-right {
-                float: right;
-                width: 300px;
-            }
-            
-            .content-image-block img {
-                width: 286px;
-                height: 164px;
-                border: 7px solid #fff;
-                background-color: #e5e5e5;
-                margin-bottom: 45px;
-            }
-            
-            .content-prev {
-                width: 140px;
-                margin-right: 15px;
-            }
-            
-            .content-next {
-                width: 140px;
-                margin-right: 0;
-            }
-            
-            .content-contact-block {
-                margin-bottom: 30px;
-                font-size: 0.875em;
-                font-weight: bold;
-                line-height: 1.8;
-            }
-            
-            .content-form {
-                display: inline-block;
-            }
-            
-            .input-bottom {
-                margin-bottom: 20px;
-            }
-            
-            .content-form p {
-                font-size: 0.875em;
-                font-weight: bold;
-                line-height: 1.8;
-            }
-            
-            .content-form input {
-                float: left;
-                margin-right: 16px;
-                margin-bottom: 35px;
-                width: 100px;
-                padding: 10px 15px;
-                border: 2px solid #000101;
-                font-family: "PT Sans Narrow", sans-serif;
-                font-size: 0.875em;
-                line-height: 24px;
-                text-transform: uppercase;
-                background-color: #f9f6f3;
-                outline: none;
-                background: white url(images/content-bcgrd.jpg);
-            }
-            
-            .content-form-right {
-                float: right;
-            }
-            
-            .btn-submit {
-                width: 95%;
-            }
-            
-                        /* FOOTER */
-            .ftr {
-                background: url(images/footer-bcgrd.jpg) no-repeat center top;
-                padding: 60px 0 0 0;
-                color: #fff;
-            }
-            
-            .ftr-block-left {
-                float: left;
-                margin-right: 75px;
-            }
-            
-            .ftr-block-left a {
-                color: #fff;
-            }
-            
-            .ftr-social-block {
-                float: left;
-                text-align: center;
-            }
-            
-            .ftr-social-block p {
-                margin-bottom: 23px;
-                font-size: 0.875em;
-                font-weight: bold;
-                line-height: 1.8;
-            }
-            
-            .ftr-social-block .btn {
-                margin-right: 10px;
-                padding: 15px 25px;
-                vertical-align: top;
-            }
-            
-            .ftr-vk-social {
-                background: #000 url(images/ftr-vk-social.png) no-repeat center;
-            }
-            
-            .ftr-fcbk-social {
-                background: #000 url(images/ftr-fcbk-social.png) no-repeat center;
-            }
-            
-            .ftr-inst-social {
-                background: #000 url(images/ftr-inst-social.png) no-repeat center;
-            }
-            
-            .ftr-block-right {
-                float: right;
-                font-size: 0.875em;
-                font-weight: bold;
-                line-height: 1.8;
-            }
-            
-            
-            .ftr-block-right .btn {
-                margin-right: 0;
-                padding: 15px 30px;
-            }
-            
-            .ftr-block-right p {
-                margin-bottom: 20px;
-                text-align: center;
-            }
+    /* --------------- reset.css - сбрасываем настройки по умолчанию --------------- */
+    html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;                               /* обнуляем отступы и убираем бордюры */
+    vertical-align: baseline;          /* приводим все к одной базовой линии */
+    background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%;                     /* размер шрифта всем одинаковый */
+    }
 
-            
-                            /* Item.html */
-            .item_logo {
-                padding: 18px 10px 0 0;
-                cursor: default;
-            }
-            
-            .item_bcg {
-                background: url(images/item_bcg.jpg) repeat;
-                margin-top: -50px;
-            }
-            
-            .item_block_main {
-                padding: 50px 0;
-            }
-            
-            .content-title {
-                margin-bottom: 15px;
-            }
-            
-            .item_content-news {
-                font-size: 0.875em;
-                font-weight: bold;
-                text-transform: uppercase;
-                line-height: 1.8;
-                margin-bottom: 50px;
-            }
-            
-            .item_content-news li {
-                float: left;
-            }
-            
-            .item_content-news li a {
-                text-decoration: none;
-                color: #000;
-            }
-            
-            .item_content-news li a:hover {
-                text-decoration: underline;
-                color: #242424;
-            }
-            
-            .item_content-news img {
-                margin: 0 15px;
-            }
-            
-            .item_content-news span {
-                color: #aba9a7;
-            }
-            
-            .item_block_img {
-                float: left;
-                width: 49%;
-            }
-            
-            .item_block_img img {
-                box-shadow: 0 0 20px 0px #e0ddda;
-            }
-            
-            .item_big_img img {
-                margin-bottom: 16px;
-            }
-            
-            .item_img img {
-                margin-left: 16px;
-            }
-            
-            .item_img img:first-child {
-                margin-left: 0;
-            }
-            
-            .item_block_news {
-                float: right;
-                width: 41%;
-            }
-            
-            .item_description p {
-                font-size: 0.875em;
-                font-weight: bold;
-                text-transform: uppercase;
-                line-height: 1.8;
-                padding: 15px 0;
-            }
-            
-            .item_description span {
-                margin-left: 175px;
-                color: #aba9a7;
-            }
-            
-            .item_btn {
-                margin: 10px 0 45px 0;
-            }
-            
-            .item_btn1 {
-                padding: 12px 38px;
-                background-color: #e5e5e5;
-                font-weight: bold;
-                text-decoration: none;
-                font-size: 0.875em;
-                color: #000;
-                text-transform: uppercase;
-                margin-right: -3px;
-                border: none;
-                outline: none;
-                cursor: default;
-            }
-            
-            .item_btn2 {
-                padding: 12px 20px;
-                background-color: #000;
-                font-weight: bold;
-                text-decoration: none;
-                font-size: 0.875em;
-                color: #fff;
-                text-transform: uppercase;
-                border: none;
-                outline: none;
-                cursor: pointer;
-            }
-            
-            .item_btn2:hover {
-                background-color: #663d15;
-            }
-            
-            .item-title {
-                font-size: 1.5em;
-                font-weight: bold;
-                text-transform: uppercase;
-                margin-bottom: 23px;
-            }
-            
-            .item_description li {
-                list-style: none;
-                font-size: 0.875em;
-                font-weight: bold;
-                text-transform: uppercase;
-                line-height: 2;
-                color: #000;
-            }
-            
-            .item_description img {
-                margin-right: 10px;
-            }
+    html {
+    min-height:100%;            /* всегда показываем вертикальную полосу прокрутки  */
+    }
 
-                        /* shop.html */
-.shop-title {
+    a {                             /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    outline: none;
+    }
+
+    table {						    /* устраняем отступы между ячейками таблицы */
+    border-collapse: collapse; 
+    border-spacing: 0;
+    }
+
+    td, td img {
+    vertical-align: top;		/* возвращаем привычное вертикальное выравнивание */
+    } 
+
+    input, select, button, textarea {
+    margin: 0; 				    /* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+    font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+    outline: none;
+    }
+
+    input[type="text"], input[type="password"], textarea {
+    padding: 0; 				/* убираем внутренние отступы для текстовых полей */
+    }
+
+    input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+    vertical-align: bottom;
+    }
+
+    input[type="radio"] {
+    vertical-align: text-bottom;
+    }
+
+    sub {
+    vertical-align: sub;
+    font-size: smaller;
+    }
+
+    sup {
+    vertical-align: super;
+    font-size: smaller;
+    }
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+    }
+
+    nav ul {
+    list-style: none;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+    }
+
+    img {
+    max-width:100%;
+    }
+
+    .clr {                              /* для этого класса убираем обтекание */
+    clear:both;
+    }
+
+    .clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+    }
+
+    /* ДАЛЕЕ - стилизация макета  */
+
+    body {
+    background: url(images/cover.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-family: 'PT Sans Narrow', sans-serif;
+    }
+    /* ШАПКА */
+    .main-header {
+    background-color: #000;
+    margin-bottom: 50px;
+    }
+
+    .center-block-main {
+    max-width: 940px;
+    margin: 0 auto;
+    }
+
+    .header {
+    font-weight: bold;
+    }
+
+    .menu {
+    float: left;
+    }
+
+    .menu li {
+    float: left;
+    margin-right: 0;
+    text-transform: uppercase;
+    font-size: 1em;
+    }
+
+    .menu li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 20px 15px;
+    }
+
+    .menu li a:hover {
+    background-color: #242424;
+    }
+
+    .input {
+    float: right;
+    padding: 20px 15px;
+    }
+
+    .input img {
+    margin-right: 7px;
+    vertical-align: middle;
+    opacity: 0.3;
+    }
+
+    .input span {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    vertical-align: middle;
+    }
+
+    .input:hover {
+    background-color: #242424;
+    cursor: pointer;
+    }
+
+    .input:hover .header-login {
+        opacity: 1;
+    }
+
+    /* лого + МЕНЮ */
+    .main-content {
+    margin-bottom: 60px;
+    }
+
+    .logo {
+    margin: 0 auto 70px auto;
+    display: block;
+    }
+
+    .block3-main {
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .block3-main article {
+    width: 31%;
+    float: left;
+    margin-left: 2.6%;
+    }
+
+    .block3-main article:first-child {
+    margin-left: 0;
+    }
+
+    .block3-main article h2 {
+    font-size: 1.875em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    }
+
+    .block3-main article img {
+    display: table;
+    margin: 10px auto 30px auto;
+
+    }
+
+    .block3-main article p {
+    font-size: 0.875em;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    }
+    /* ОСНОВНОЕ СОДЕРЖИМОЕ */
+    .content-bcgrd {
+    background: url(images/brd.png) no-repeat center, white url(images/content-bcgrd.jpg);
+    margin-bottom: 35px;
+    padding: 50px 80px;
+    box-sizing: border-box;
+    }
+
+    .block2-main-left {
+    float: left;
+    width: 350px;
+    }
+
+    .content-title {
+    font-size: 1.875em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    }
+
+    .content-news li {
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    list-style: none;
+    }
+
+    .btn {
+    padding: 11px 33px;
+    background-color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.875em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
+
+    .btn:hover {
+    background-color: #663d15;
+    }
+
+    .block2-main-right {
+    float: right;
+    width: 300px;
+    }
+
+    .content-image-block img {
+    width: 286px;
+    height: 164px;
+    border: 7px solid #fff;
+    background-color: #e5e5e5;
+    margin-bottom: 45px;
+    }
+
+    .content-prev {
+    width: 140px;
+    margin-right: 15px;
+    }
+
+    .content-next {
+    width: 140px;
+    margin-right: 0;
+    }
+
+    .content-contact-block {
+    margin-bottom: 30px;
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 1.8;
+    }
+
+    .content-form {
+    display: inline-block;
+    }
+
+    .input-bottom {
+    margin-bottom: 20px;
+    }
+
+    .content-form p {
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 1.8;
+    }
+
+    .content-form input {
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 35px;
+    width: 100px;
+    padding: 10px 15px;
+    border: 2px solid #000101;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 0.875em;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: #f9f6f3;
+    outline: none;
+    background: white url(images/content-bcgrd.jpg);
+    }
+
+    .content-form-right {
+    float: right;
+    }
+
+    .btn-submit {
+    width: 95%;
+    }
+
+    /* FOOTER */
+    .ftr {
+    background: url(images/footer-bcgrd.jpg) no-repeat center top;
+    padding: 60px 0 0 0;
+    color: #fff;
+    }
+
+    .ftr-block-left {
+    float: left;
+    margin-right: 75px;
+    }
+
+    .ftr-block-left a {
+    color: #fff;
+    }
+
+    .ftr-social-block {
+    float: left;
+    text-align: center;
+    }
+
+    .ftr-social-block p {
+    margin-bottom: 23px;
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 1.8;
+    }
+
+    .ftr-social-block .btn {
+    margin-right: 10px;
+    padding: 15px 25px;
+    vertical-align: top;
+    }
+
+    .ftr-vk-social {
+    background: #000 url(images/ftr-vk-social.png) no-repeat center;
+    }
+
+    .ftr-fcbk-social {
+    background: #000 url(images/ftr-fcbk-social.png) no-repeat center;
+    }
+
+    .ftr-inst-social {
+    background: #000 url(images/ftr-inst-social.png) no-repeat center;
+    }
+
+    .ftr-block-right {
+    float: right;
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 1.8;
+    }
+
+
+    .ftr-block-right .btn {
+    margin-right: 0;
+    padding: 15px 30px;
+    }
+
+    .ftr-block-right p {
+    margin-bottom: 20px;
+    text-align: center;
+    }
+
+
+    /* Item.html */
+    .item_logo {
+    padding: 18px 10px 0 0;
+    cursor: default;
+    }
+
+    .item_bcg {
+    background: url(images/item_bcg.jpg) repeat;
+    margin-top: -50px;
+    }
+
+    .item_block_main {
+    padding: 50px 0;
+    }
+
+    .content-title {
+    margin-bottom: 15px;
+    }
+
+    .item_content-news {
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    }
+
+    .item_content-news li {
+    float: left;
+    }
+
+    .item_content-news li a {
+    text-decoration: none;
+    color: #000;
+    }
+
+    .item_content-news li a:hover {
+    text-decoration: underline;
+    color: #242424;
+    }
+
+    .item_content-news img {
+    margin: 0 15px;
+    }
+
+    .item_content-news span {
+    color: #aba9a7;
+    }
+
+    .item_block_img {
+    float: left;
+    width: 49%;
+    }
+
+    .item_block_img img {
+    box-shadow: 0 0 20px 0px #e0ddda;
+    }
+
+    .item_big_img img {
+    margin-bottom: 16px;
+    }
+
+    .item_img img {
+    margin-left: 16px;
+    }
+
+    .item_img img:first-child {
+    margin-left: 0;
+    }
+
+    .item_block_news {
+    float: right;
+    width: 41%;
+    }
+
+    .item_description p {
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.8;
+    padding: 15px 0;
+    }
+
+    .item_description span {
+    margin-left: 175px;
+    color: #aba9a7;
+    }
+
+    .item_btn {
+    margin: 10px 0 45px 0;
+    }
+
+    .item_btn1 {
+    padding: 12px 38px;
+    background-color: #e5e5e5;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.875em;
+    color: #000;
+    text-transform: uppercase;
+    margin-right: -3px;
+    border: none;
+    outline: none;
+    cursor: default;
+    }
+
+    .item_btn2 {
+    padding: 12px 20px;
+    background-color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.875em;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    }
+
+    .item_btn2:hover {
+    background-color: #663d15;
+    }
+
+    .item-title {
     font-size: 1.5em;
-}
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+    }
 
-.shop-group2 {
+    .item_description li {
+    list-style: none;
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 2;
+    color: #000;
+    }
+
+    .item_description img {
+    margin-right: 10px;
+    }
+
+    /* shop.html */
+    .shop-title {
+    font-size: 1.5em;
+    }
+
+    .shop-group2 {
     margin: 40px 0 33px 0;
-}
+    }
 
-.item_block_main form {
+    .item_block_main form {
     float: left;
     width: 26%;
-}
+    }
 
-.shop-container {
+    .shop-container {
     display: block;
     font-size: 0.875em;
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.9;
     padding-bottom: 10px;
-}
+    }
 
-.shop-container input {
+    .shop-container input {
     margin-right: 30px;
     vertical-align: baseline;
     transform: scale(1.6);      /* увеличили чекбокс через трансформ */
     opacity: 0.9;
     cursor: pointer;
-}
+    }
 
 
-/* СТИЛИЗУЕМ КНОПКИ */
-/* checkbox */
-.shop-container input[type="checkbox"] {
+    /* СТИЛИЗУЕМ КНОПКИ */
+    /* checkbox */
+    .shop-container input[type="checkbox"] {
     display: none;
-}
+    }
 
-.shop-container label::before {
+    .shop-container label::before {
     content: '';
     display: inline-block;
     width: 20px;
@@ -566,22 +570,22 @@
     vertical-align: middle;
     margin-right: 20px;
     text-align: center;
-}
+    }
 
-.shop-container input[type="checkbox"]:checked + label::before {
+    .shop-container input[type="checkbox"]:checked + label::before {
     content: '';
     background-image: url(images/cross.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 70%;
-}
+    }
 
-/* стилизуем radio */
-.shop-group2 input[type="radio"] {
+    /* стилизуем radio */
+    .shop-group2 input[type="radio"] {
     display: none;
-}
+    }
 
-.shop-group2 label::before {
+    .shop-group2 label::before {
     content: '';
     display: inline-block;
     width: 20px;
@@ -591,68 +595,68 @@
     margin-right: 20px;
     text-align: center;
     border-radius: 50%;
-}
+    }
 
-.shop-group2 input[type="radio"]:checked + label::before {
+    .shop-group2 input[type="radio"]:checked + label::before {
     content: '';
     background-image: url(images/circle.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 50%;
-}
+    }
 
-.shop-container span {
+    .shop-container span {
     margin-left: 43px;
-}
+    }
 
-.posts_element {
+    .posts_element {
     display: flex;
     margin-left: 245px;
     flex-wrap: wrap;
-}
+    }
 
-.posts_element article {
+    .posts_element article {
     background-color: #fff;
     margin-left: 2.5%;
     margin-bottom: 2.5%;
-}
+    }
 
-.posts_element article img {
+    .posts_element article img {
     display: block;
     margin: 0 auto 0 auto;
-}
+    }
 
-.posts_element article:first-child {
+    .posts_element article:first-child {
     margin-left: 0;
-}
+    }
 
-.posts_element article:nth-child(4) {
+    .posts_element article:nth-child(4) {
     margin-left: 0;
-}
+    }
 
-.posts_element .item_btn {
+    .posts_element .item_btn {
     margin: 7px 9px 25px 16px;
-}
+    }
 
-.posts_element .item_btn1 {
+    .posts_element .item_btn1 {
     padding: 12px 35px;
-}
+    }
 
-.posts_element .item_btn2 {
+    .posts_element .item_btn2 {
     padding: 12px 18px;
-}
+    }
 
-.post_info p {
+    .post_info p {
     font-size: 0.875em;
     font-weight: bold;
     padding: 15px;
-}
+    }
 
-.post_info p span {
+    .post_info p span {
     text-transform: uppercase;
-}
+    }
 
-.form-btn {
+    .form-btn {
     padding: 12px 22px;
     background-color: #000;
     color: #fff;
@@ -662,25 +666,25 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-}
+    }
 
-.form-btn:hover {
+    .form-btn:hover {
     background-color: #663d15;
-}
+    }
 
-.pagination {
+    .pagination {
     margin: 40px 0 0 245px;
     display: inline-block;
-}
+    }
 
 
-.pagination ul li {
+    .pagination ul li {
     float: left;
     list-style: none;
     margin-right: 7px;
-}
+    }
 
-.pagination ul li a {
+    .pagination ul li a {
     display: block;
     padding: 12px 19px;
     text-decoration: none;
@@ -689,20 +693,20 @@
     border: none;
     cursor: pointer;
     font-weight: bold;
-}
+    }
 
-.pagination ul li a:hover {
+    .pagination ul li a:hover {
     background-color: #fff;
     color: #000;
-}
+    }
 
-.pagination .current {
+    .pagination .current {
     background-color: #fff;
     color: #000;
-}
+    }
 
-                /* price.html */
-.price-big-title {
+    /* price.html */
+    .price-big-title {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -710,40 +714,40 @@
     background-image: url(images/price-line.png), url(images/price-line2.png);
     background-repeat: no-repeat;
     background-position: left, right;
-}
+    }
 
-.price-center-content-blog {
+    .price-center-content-blog {
     margin: 50px 0;
-}
+    }
 
-.blog-left {
+    .blog-left {
     float: left;
     width: 240px;
-}
+    }
 
-.blog-left li {
+    .blog-left li {
     list-style: none;
     font-size: 0.875em;
     font-weight: bold;
     text-transform: uppercase;
     color: #000;
     margin-bottom: 18px;
-}
+    }
 
-.blog-left li:last-child {
+    .blog-left li:last-child {
     margin-bottom: 0;
-}
+    }
 
-.blog-left img {
+    .blog-left img {
     margin-right: 10px;
-}
+    }
 
-.blog-right {
+    .blog-right {
     float: right;
-}
+    }
 
-                    /* таблица */
-table {
+    /* таблица */
+    table {
     width: 460px;
     border: 2px solid #000;
     color: #000;
@@ -751,43 +755,43 @@ table {
     font-size: 0.875em;
     font-weight: bold;
     text-transform: uppercase;
-}
+    }
 
-tr {
+    tr {
     text-align: center;
-}
+    }
 
-.left-column {
+    .left-column {
     text-align: left;
     padding-left: 15px;
     vertical-align: middle;
     width: 50%;
-}
+    }
 
-td, tr {
+    td, tr {
     border: 2px solid #000;
     height: 40px;
     vertical-align: middle;
-}
+    }
 
-.price-blog-articles {
+    .price-blog-articles {
     margin: 0;
-}
+    }
 
-.price-blog-articles p {
+    .price-blog-articles p {
     font-size: 0.875em;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
-}
+    }
 
-.price-text1 {
+    .price-text1 {
     float: left;
     width: 42%;
-}
+    }
 
-.price-text2 {
+    .price-text2 {
     float: right;
     width: 49%;
     margin-top: 55px;
-}
+    }
