@@ -1,4 +1,4 @@
 # barbershop
 Работа над проектом!)
 
-Demo -  https://omarov-frontend.github.io/barbershop/
+Demo -  https://omarovfrontend.github.io/barbershop/
